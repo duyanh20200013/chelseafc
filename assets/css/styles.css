@@ -1,0 +1,491 @@
+/*Reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+} 
+html{
+    scroll-behavior: smooth;  
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 550;
+} 
+
+p{
+    margin: 16px 0;
+}
+.main{
+    
+}
+
+.header{
+     height: 76px;
+     padding: 16px 32px;
+     background-color: #001489;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     top :0;
+     z-index: 100;
+     left: 0;
+     right:0;
+
+}
+
+.control{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+}
+
+.logo{
+
+}
+
+.img-logo{
+    width: 30px;
+}
+
+.navbar{
+   padding-left: 16px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar-item{
+      text-decoration: none;
+      color: white;
+      padding: 0 16px;
+}
+
+.navbar-item:hover::after,
+.sign__item:hover::after{
+    transform: scale(1);
+}
+
+.navbar-item::after,
+.sign__item::after {
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 2px;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+}
+
+.option__language{
+    width: 84px;
+    border: none;
+    background:none;
+    color: white;
+}
+
+.option__name{
+    font-weight: bold;
+    color: #000;
+}
+
+.sign{
+     display: flex;
+     justify-content: space-between;
+     margin-left: 24px;
+}
+
+.sign__item{
+    text-decoration: none;
+    color: white;
+    padding: 0 16px;
+}
+
+.sign__item:last-child{
+    border-left: 1px solid #fff;
+}
+
+.slider{
+      margin-top: 40px;
+      padding-top:54% ;
+      background: url(/assets/img/slider--chelsea.jpg) top center / cover no-repeat;
+      height: 200px;
+}
+
+#first-team{
+       width: 66.66%;
+       margin: 0 auto;
+}
+
+.roler{
+    margin: 60px 0 60px -90px;
+    color: black;
+    font-size: 28px;
+}
+
+.roler::after{
+    content: " ";
+    display: block;
+    height: 3px;
+    width: 160px;
+    background-color: #001489;
+}
+
+.postion-name{
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+    border-bottom: solid rgba(216, 216, 216, 0.8) 1px;
+}
+
+.sub-postion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.postion-btn{
+    background-color:#E6E6FA ;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.postion-btn:hover{
+    cursor: pointer;
+}
+
+.postion-btn:hover .postion-number::after{
+    width: 40px;
+}
+
+.postion-btn:hover .postion-img{
+    transform: scale(1.2);
+}
+
+.postion-img{
+    width: 250px;
+    transition: 1s;
+}
+.postion-info{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    color: #000;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.postion-number{
+    font-size: 14px;
+}
+
+.postion-number::after {
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 20px;
+    background-color: #001489;
+    transition: 1s;
+}
+.postion-info-name{
+       width: 50%;
+       font-size: 20px;
+}
+
+#manager{
+    padding: 16px 0;
+    color: white;
+}
+
+.manager-visual{
+   display: flex;
+   justify-content: center;
+   background-color: #3f3f3f ;
+   padding-top: 40px;
+}
+
+.manager-visual-items {
+    flex-basis: 20%;
+}
+
+.visual-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.visual-name{
+     
+}
+
+.visual-role{
+     position: relative;
+     padding-bottom: 36px;
+     font-size: 30px;
+     top:-42px;
+}
+
+.visual-role::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 150px;
+    background-color: #001489;
+}
+
+.visual-role__name{
+    width: 70%;
+    font-size: 24px;
+}
+
+.visual-message{
+    width: 70%;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.visual-img{
+    display: flex;
+    align-self: flex-end;
+}
+
+.visual-static-item{
+    margin-bottom: 32px;
+}
+
+.visual-static-item .number{
+    display: block;
+    font-size: 20px;
+}
+
+.manager-info{
+    width: 60%;
+    margin: 48px auto;
+    color: #000;
+}
+
+.info-bio{
+    border-bottom: gray solid 2px;
+}
+
+.bio-title{
+    color: gray;
+}
+
+.bio-text{
+    text-transform: none; 
+}
+
+.info-shortcut{
+    display: flex;
+    text-transform: capitalize;
+}
+
+.shortcut-list{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.shortcut-list-item{
+    flex: 1;
+}
+
+.item-title{
+    text-transform: uppercase;
+    color: gray;
+    font-size: 12px;
+}
+
+.item-date{
+    color: #001489;
+    font-size: 22px;
+    margin: 12px 0 0 0;
+}
+
+.germany{
+   width: 40px;
+   position: relative;
+   top: 5px;
+   padding-right: 4px;
+}
+
+.item-date-note{
+    font-size: 12px;
+    
+}
+
+#legend{
+    background-color:#3f3f3f ;
+    overflow: hidden;
+    padding: 48px 0;
+}
+
+.legend-role{
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 36px;
+    position: relative;
+    top: -20px;
+    left: 130px;
+}
+
+.legend-role::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 125px;
+    background-color: #001489;
+}
+
+.legend-button-list{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     width: 100%;
+}
+
+.legend-button-item{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(78, 73, 73);
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.legend-button-item::after {
+    content: " ";
+    display: block;
+    width: 200px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+    position: absolute;
+    bottom: 0;
+}
+
+.legend-button-item:hover .legend-img{
+    transform: scale(1.2);
+}
+
+.legend-button-item:hover .legend-name::before{
+    width: 100%;
+}
+
+.legend-img{
+    width: 100%;
+    transition: all 0.8s linear;
+}
+
+.legend-name{
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    width: 50%;
+    z-index: 1;
+    bottom: 0;
+    left: 10%;
+    color: rgb(228, 213, 213);
+    text-shadow: 1px 1px 1px gray
+}
+
+.legend-name::before{
+    display: block;
+    content: " ";
+    height: 2px;
+    background-color: #001489;
+    width: 50%;
+    transition: 0.8s;
+}
+
+.footer{
+    position: relative;
+    bottom: -50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding-bottom: 55px;
+}
+
+.sponsor{
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.sponsor-item{
+
+}
+
+.sponsor-img{
+    width: 130px;
+    margin: 0 16px;
+    opacity: 0.7;
+}
+
+.contact{
+    position: absolute;
+    display: flex;
+    bottom: 20%;
+    right: 5%;
+}
+
+
+
+.contact-item:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-item {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 10px;
+    transition: 0.7s;
+    top: -41px;
+}
+
+.contact-icon{
+    font-weight: 400;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 43px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #001489;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
