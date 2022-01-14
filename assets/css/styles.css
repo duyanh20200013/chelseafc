@@ -112,7 +112,7 @@ p{
 .slider{
       margin-top: 40px;
       padding-top:54% ;
-      background: url(/assets/img/slider--chelsea.jpg) top center / cover no-repeat;
+      background: url(./assets/img/slider--chelsea.jpg) top center / cover no-repeat;
       height: 200px;
 }
 
